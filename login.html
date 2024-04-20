@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOG IN</title>
+    <link href="form.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header> 
+        <h1>CoWrkr</h1>
+        <nav>
+            <ul><li><a href="index.html">HOME</a></li>
+                <li><a href="features.html">FEATURES</a></li>
+            <li><a href="signup.html">SIGN UP</a></li>
+        <li><a href="rate.html">RATE US</a> </li>
+        <li><a href="contact.html">CONTACT US</a></li>
+    </ul>
+        </nav>
+        <hr>
+        </header>
+        <main>
+        <form class="login-form" method="POST" action="http://localhost:3000/login">
+            <fieldset>
+                <legend>Log In</legend>
+                <table>
+                    <div class="form-group">
+                        <tr>
+                        <td><label for="login-email">Email</label></td>
+                        <td><input type="email" id="login-email" name="email" required></td></tr>
+                    </div>
+                    <div class="form-group">
+                        <tr>
+                        <td><label for="login-password">Password</label></td>
+                        <td><input type="password" id="login-password" name="password" required></td></tr>
+                    </div>
+                    <div class="form-group">
+                        <tr><td><label for="login-role">Role</label></td>
+                        <td><select id="login-role" name="role" required>
+                            <option value="">Select a role</option>
+                            <option value="admin">Owner</option>
+                            <option value="user">CoWorker</option>
+                        </select></td></tr>
+                    </div>
+                    </table>
+                    <div id="error-message" style="color: red; margin-top: 10px;"></div>
+                    <button type="submit">Login</button>
+                    <button type="reset">Reset</button>
+                    <p id="log">Create an account ? <a href="signup.html">SIGN UP</a></p>
+                </fieldset>
+                
+            </form>
+       </main>
+        <footer>
+            <p>&copy; 2024 CoWrkr. All rights reserved.</p>
+        <!-- </footer><script src="login.js"></script> -->
+      
+</body>
+</html>

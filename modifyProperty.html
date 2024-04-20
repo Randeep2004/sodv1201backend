@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modify A Property</title>
+    <link href="form.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1>CoWrkr</h1>
+        <nav>
+            <ul><li><a href="index.html">HOME</a></li>
+                <li><a href="features.html">FEATURES</a></li>
+            <li><a href="signup.html">SIGN UP</a></li>
+        <li><a href="rate.html">RATE US</a> </li>
+        <li><a href="contact.html">CONTACT US</a></li>
+    </ul>
+        </nav>
+        <hr>
+        </header>
+        <button id="back">&#x2190</button>
+        <main>
+            <form id="modify-property">
+                <fieldset>
+            <legend>Modify A Property</legend>
+                <div class="form-group">
+                    <label for="property-type">Select a Property:</label>
+                    <select id="property-type" name="property-type" required>
+                        <option value="">Select Property</option>
+                        </select>
+                    </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                <div class="form-group">
+                    <label for="neighborhood">Neighborhood:</label>
+                    <input type="text" id="neighborhood" name="neighborhood" required>
+                </div>
+                <div class="form-group">
+                    <label for="square-feet">Square Feet:</label>
+                    <input type="number" id="square-feet" name="squareFeet" required>
+                </div>
+                <div class="form-group">
+                    <label>Parking Garage:</label><br>
+                    <label for="parking-yes">Yes</label>
+                    <input type="radio" id="parking-yes" name="parkingGarage" value="yes" required>
+                    <label for="parking-no">No</label>
+                    <input type="radio" id="parking-no" name="parkingGarage" value="no">
+                </div>
+                <div class="form-group">
+                    <label>Public Transportation:</label><br>
+                    <label for="trans-yes">Yes</label>
+                    <input type="radio" id="trans-yes" name="publicTransportation" value="yes" required>
+                    <label for="trans-no">No</label>
+                    <input type="radio" id="trans-no" name="publicTransportation" value="no">
+                </div>
+                <div class="form-group">
+                    <label for="availability-date">Availability Date:</label>
+                    <input type="date" id="availability-date" name="availabilityDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="lease-term">Lease Term (in Months):</label>
+                    <input type="text" id="lease-term" name="leaseTerm" required>
+                </div>
+                <div class="form-group">
+                    <label for="price">Price:</label>
+                    <input type="number" id="price" name="price" required>
+                </div>
+                <button>SAVE</button>
+                </fieldset>
+                </form>
+        </main>
+        <footer>
+            <p>&copy; 2024 CoWrkr. All rights reserved.</p>
+        </footer>
+        <script src="back.js"></script>
+        <script src="modifyP.js"></script>
+</body>
+</html>

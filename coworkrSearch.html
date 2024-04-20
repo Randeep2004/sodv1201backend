@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Workspace</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="form.css" rel="stylesheet">
+</head>
+<body>
+  <header> 
+    <h1>CoWrkr</h1>
+    <nav>
+        <ul><li><a href="index.html">HOME</a></li>
+            <li><a href="features.html">FEATURES</a></li>
+        <li><a href="signup.html">SIGN UP</a></li>
+    <li><a href="rate.html">RATE US</a> </li>
+    <li><a href="contact.html">CONTACT US</a></li>
+</ul>
+    </nav>
+    <hr>
+    </header>
+        <button id="backC">&#x2190</button>
+        <main>
+        <form id="searchForm">
+            <label for="searchBy">Search By:</label>
+            <select id="searchBy">
+              <option value="address">Address</option>
+              <option value="neighborhood">Neighborhood</option>
+              <option value="individuals">Individuals Allowed</option>
+              <option value="area">Area (sq. feet)</option>
+              <option value="availability">Availability Date</option>
+              <option value="leaseTerm">Lease Term</option>
+              <option value="price">Price</option>
+            </select>
+            <label for="searchTerm">Search</label>
+            <input type="text" id="searchTerm" placeholder="Enter search term">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+          <div id="searchResults"></div>
+          <form id="sortForm">
+            <label for="sortBy">Sort By:</label>
+            <select id="sortBy">
+              
+              <option value="individuals">Individuals Allowed</option>
+              <option value="area">Area (sq. feet)</option>
+              <option value="availability">Availability Date</option>
+              <option value="leaseTerm">Lease Term</option>
+              <option value="price">Price</option>
+            </select>
+           
+            <button type="submit" ><i class="fa fa-search"></i></button>
+            <div id="sortResults"></div>
+        </form>
+        </main>
+        <footer>
+          <p>&copy; 2024 Shared Workspace Web App</p>
+      </footer>
+      <script src="backC.js"></script>
+      <script src="coSearch.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modify a Workspace</title>
+    <link href="form.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+    <h1>CoWrkr</h1>
+        <nav>
+            <ul><li><a href="index.html">HOME</a></li>
+                <li><a href="features.html">FEATURES</a></li>
+            <li><a href="signup.html">SIGN UP</a></li>
+        <li><a href="rate.html">RATE US</a> </li>
+        <li><a href="contact.html">CONTACT US</a></li>
+    </ul>
+        </nav>
+        <hr>
+        </header>
+        <button id="back">&#x2190</button>
+        <main>
+            <form id="modify-workspace">
+                <fieldset>
+            <legend>Modify A Workspace</legend>
+                <div class="form-group">
+                    <label for="property-type">Select a Workspace:</label>
+                    <select id="property-type" name="property-type" required>
+                        <option value="">Select workspace</option>
+                        </select>
+                    </div>
+                <div class="form-group">
+                    <label for="type">Type of Property</label>
+                    <input type="text" id="type" name="type" required>
+                </div>
+                <div class="form-group">
+                    <label for="individuals">Individuals Allowed:</label>
+                    <input type="number" id="individuals" name="individuals" required>
+                </div>
+                <div class="form-group">
+                    <label>Smoking Allowed :</label>
+                    <label for="smoking-yes">Yes</label>
+                    <input type="radio" id="smoking-yes" name="smoking" value="yes" required>
+                    <label for="smoking-no">No</label>
+                    <input type="radio" id="smoking-no" name="smoking" value="no">
+                </div>
+                <div class="form-group">
+                    <label for="availability-date">Availability Date:</label>
+                    <input type="date" id="availability-date" name="availabilityDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="lease-term">Lease Term (in Months):</label>
+                    <input type="text" id="lease-term" name="leaseTerm" required>
+                </div>
+                <div class="form-group">
+                    <label for="price">Price:</label>
+                    <input type="number" id="price" name="price" required>
+                </div>
+                <button type="submit" id="modify">Modify</button>
+                </fieldset>
+                </form>
+                </main>
+                <footer>
+                    <p>&copy; 2024 CoWrkr. All rights reserved.</p>
+                </footer>
+                <script src="back.js"></script>
+                <script src="modifyW.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header> 
+        <h1>CoWrkr</h1>
+        <nav>
+            <ul><li><a href="index.html">HOME</a></li>
+                <li><a href="features.html">FEATURES</a></li>
+            <li><a href="signup.html">SIGN UP</a></li>
+        <li><a href="rate.html">RATE US</a> </li>
+        <li><a href="contact.html">CONTACT US</a></li>
+    </ul>
+        </nav>
+        <hr>
+        </header>
+    <main>
+        <h2><u>SIGN UP</u></h2>
+        <form class="signup-form" method="POST" action="http://localhost:3000/signup">
+            <fieldset>
+               <table>
+            <div class="form-group">
+                <tr>
+                <td><label for="username">Username</label></td>
+                <td><input type="text" id="username" name="username" required></td></tr>
+            </div>
+            <div class="form-group">
+                <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="email" id="email" name="email" required></td></tr>
+            </div>
+            <div class="form-group">
+                <tr>
+                <td><label for="password">Password</label></td>
+                <td><input type="password" id="password" name="password" required></td></tr>
+            </div>
+            <div class="form-group">
+                <tr>
+                <td><label for="phone">Phone</label></td>
+                <td><input type="tel" id="phone" name="phone" required></td></tr>
+            </div>
+            <div class="form-group">
+                <tr><td><label for="role">Role</label></td>
+                <td><select id="role" name="role" required>
+                    <option value="">Select a role</option>
+                    <option value="admin">Owner</option>
+                    <option value="user">CoWorker</option>
+                </select></td></tr>
+            </div>
+            </table>
+            <div id="error-message" style="color: red; margin-top: 10px;"></div>
+            <button type="submit">Sign Up</button>
+            <button type="reset">Reset</button>
+            <p id="log">Already have an account ? <a href="login.html">LOG IN</a></p>
+        </fieldset>
+        </form>
+      
+    
+    </main>
+    <footer>
+        <p>&copy; 2024 CoWrkr. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>

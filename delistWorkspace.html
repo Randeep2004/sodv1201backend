@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delist a  workspace</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header> 
+        <h1>CoWrkr</h1>
+        <nav>
+            <ul><li><a href="index.html">HOME</a></li>
+                <li><a href="features.html">FEATURES</a></li>
+            <li><a href="signup.html">SIGN UP</a></li>
+        <li><a href="rate.html">RATE US</a> </li>
+        <li><a href="contact.html">CONTACT US</a></li>
+    </ul>
+        </nav>
+        <hr>
+        </header>
+        <button id="back">&#x2190</button>
+        <main>
+            <form  id="delist-form">
+                <fieldset>
+            <legend>Delist a Workspace</legend>
+            
+                <div class="form-group">
+                    <label for="property-type">Select a Workspace:</label>
+                    <select id="property-type" name="property-type" required>
+                        <option value="">Select Workspace</option>
+                        </select>
+                    </div>
+                
+                <button type="submit" id="delist">Delist</button>
+                </fieldset>
+                </form>
+                <div id="container"></div>
+        </main>
+        <footer>
+            <p>&copy; 2024 CoWrkr. All rights reserved.</p>
+        </footer>
+        <script src="back.js"></script>
+        <script src="delistW.js" type="module"></script>
+</body>
+</html>

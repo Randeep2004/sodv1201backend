@@ -1,0 +1,111 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header h1{
+    background-color:   burlywood;
+    color: #9A031E;
+    text-align: center;
+    padding-top:20px;
+    font-size: 35px;
+    padding-bottom: 10px;
+}
+nav {
+    background-color:#0F2167; 
+    padding: 10px;
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+li {
+    margin: 0 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #FFECD6;
+    font-weight: bold;
+}
+
+a:hover {
+    color:rgb(219, 183, 91);
+        text-decoration: underline;
+}
+/* class selector */
+.header {
+    text-align: center;
+    margin-top: 250px;
+}
+#sign a:hover{
+    color:#9A031E;
+}
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+/* Footer styles */
+#terms{
+    background-color: #deb887;
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+    height:450px;
+}
+
+/* Container styles */
+#container {
+    background-image: url("https://media.istockphoto.com/id/1083827690/photo/employees-working-together-in-modern-open-office-space.jpg?s=612x612&w=0&k=20&c=qEdCg_pXXZ1CmPeiV6IyQH2seXcUDkIRZ5WT0_5YvzI=");
+    background-size: cover;
+    background-position: center; /* Adjusted to contain to fit the smaller size */
+    background-position: center;
+    height:calc(100vh - 100px);
+   
+    opacity: 0.9; /* Adjust opacity for better visibility of text */
+    margin: -20px; /* Adjust margin as needed */
+}
+.quotel{
+    font-size:4em;
+    color: #76d8a7;
+    font-weight: 500;
+    padding-top:50px;
+    padding-left:60px ;
+    font-weight: 600;
+    width:1200px;
+    animation: fadeIn 2s forwards;
+    
+}
+#sign{
+    color:rgb(222, 184, 135,0.8);
+    font-size: 30px;
+    font-weight: 500;
+    
+    padding-left:60px
+}
+h2{
+    color:darkred;
+    font-size: 2em;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

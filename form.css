@@ -1,0 +1,260 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+      
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+header h1{
+    background-color:   burlywood;
+    color: #9A031E;
+    text-align: center;
+    padding-top:20px;
+    font-size: 35px;
+    padding-bottom: 10px;
+}
+nav {
+    background-color:#0F2167; 
+    padding: 10px;
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+li {
+    margin: 0 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #FFECD6;
+    font-weight: bold;
+}
+
+a:hover {
+    color:rgb(219, 183, 91);
+}
+/* class selector */
+.header {
+    text-align: center;
+    margin-top: 250px;
+}
+
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/*designing form tag */
+form {
+    margin-top: 20px;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    color: #555;
+}
+
+table {
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input,
+select {
+    width: calc(100% - 12px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+}
+
+textarea {
+    width: calc(100% - 12px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: rgb(219, 183, 91);
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: rgb(25, 98, 207);
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+a:hover {
+    text-decoration: underline;
+}
+button{
+    background-color: rgb(27, 143, 225);
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top:10px;
+    margin-left: 350px;
+}
+
+button:hover {
+    background-color: rgb(18, 63, 209);
+}
+footer {
+    background-color:bisque;
+    color: maroon;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-top:0px;
+}
+#container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #3c3eab;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #0056b3;
+}
+/* Add your existing CSS styles here */
+
+.hidden {
+    display: none;
+}
+#thankYouMessage {
+    background-color: bisque; /* Green background color */
+    color: black; /* White text color */
+    padding: 40px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    margin-left: 380px; /* Margin from the top */
+    text-align: center;
+    font-size: 20px;
+    margin-top:30px;
+    height:100px;
+   max-width:600px;
+   margin-bottom: 150px;
+}
+#log{
+    text-align: right;
+}
+#log a{
+    color:#9A031E
+}
+#back{
+    margin-left:0;
+}
+#backC{
+    margin-left:0;
+}
+/* cards */
+.property-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+  }
+  .workspace-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+  }
+  
+
+

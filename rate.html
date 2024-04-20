@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate us</title>
+    <link href="form.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header> 
+        <h1>CoWrkr</h1>
+        <nav>
+            <ul><li><a href="index.html">HOME</a></li>
+                <li><a href="features.html">FEATURES</a></li>
+            <li><a href="signup.html">SIGN UP</a></li>
+        <li><a href="rate.html">RATE US</a> </li>
+        <li><a href="contact.html">CONTACT US</a></li>
+    </ul>
+        </nav>
+        <hr>
+        </header>
+<form id="container">
+        <fieldset>
+            <legend>Rate us</legend>
+    <table>
+        <tr>
+            <td>
+    
+    <select id="rating" name="rating" required>
+        <option value="fivestars">⭐⭐⭐⭐⭐</option>
+        <option value="fourstars">⭐⭐⭐⭐</option>
+        <option value="threestars">⭐⭐⭐</option>
+        <option value="twostars">⭐⭐</option>
+        <option value="onestar">⭐</option>
+
+    </select>
+</td>
+</tr>
+</table>
+</fieldset>
+
+<input type="submit">
+
+</form>
+<div id="thankYouMessage" class="hidden">Thank you for rating us!</div>
+<footer>
+    <p>&copy; 2024 CoWrkr. All rights reserved.</p>
+</footer>
+<script src="rate.js"></script>
+</body>
+</html>

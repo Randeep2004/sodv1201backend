@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css" type="text/css">
+    <title>Contact Form</title>
+
+</head>
+
+<body>
+    <header> 
+        <h1>CoWrkr</h1>
+        <nav>
+            <ul><li><a href="index.html">HOME</a></li>
+                <li><a href="features.html">FEATURES</a></li>
+            <li><a href="signup.html">SIGN UP</a></li>
+        <li><a href="rate.html">RATE US</a> </li>
+        <li><a href="contact.html">CONTACT US</a></li>
+    </ul>
+        </nav>
+        <hr>
+        </header>
+    <main>
+        <h2><u>CONTACT US</u></h2>
+        <!--insertion of a form-->
+        <form action="mailto:pavleenk71@gmail.com" enctype="text/plain" method="post">
+            <fieldset>
+                <legend>FILL THIS</legend>
+                <table>
+                    <tr>
+                        <td width="150px"><label for="idfirstName">Enter First Name:*</label></td>
+                        <td><input name="firstname" id="idfirstName" type="text" required></td>
+                    </tr>
+                    <tr>
+                        <td width="150px"><label for="idlastName">Enter Last Name:</label></td>
+                        <td><input name="lastname" id="idlastName" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td width="150px">
+                            <label for="idEmail">Email:*</label>
+                        </td>
+                        <td>
+                            <input name="email" id="idEmail" type="email" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="150px">
+                            <label for="phone">Phone:</label></td>
+                        <td><input type="tel" id="phone" name="phone">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="150px"><label for="iddob">Date of Birth:*</label></td>
+                        <td><input id="iddob" name="dob" type="date" required></td>
+                    </tr>
+                    <tr>
+                        <td width="150px"><label for="age">Age:*</label></td>
+                        <td><input type="number" id="age" name="age" min="18" max="99" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="150px"><label>Gender:*</label></td>
+                        <td>
+
+                            <label for="male">Male</label>
+                            <input type="radio" id="male" name="gender" value="Male" required>
+
+                            <label for="female">Female</label>
+                            <input type="radio" id="female" name="gender" value="Female" required>
+
+                            <label for="other">Other</label>
+                            <input type="radio" id="other" name="gender" value="Other" required>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="150px"> <label for="idAddress">Enter Address:*</label></td>
+                        <td><input name="address" id="idAddress" type="text" required></td>
+                    </tr>
+                    <tr>
+                        <td width="150px"><label for="country">Country:*</label></td>
+                        <td><select id="country" name="country" required>
+                                <option value="" disabled selected>Select your country</option>
+                                <option value="Usa">United States</option>
+                                <option value="Canada">Canada</option>
+                                <option value="China">China</option>
+                                <option value="russia">Russia</option>
+                                <option value="Uk">United Kingdom</option>
+                                <option value="India">India</option>
+                                <option value="other">Other</option>
+                            </select></td>
+                    </tr>
+                   
+                    <tr>
+                        <td>
+                    <label for="comments">Additional Comments:</label></td>
+                    <td><textarea id="comments" name="comments" rows="4" cols="50"></textarea></td></tr>
+        
+                    <tr>
+                        <td> * shows required fields.</td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <input type="submit" value="Send">
+            <input type="reset" value="Reset Form">
+        </form>
+        <!--adding link for rating -->
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 CoWrkr. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
